@@ -5,6 +5,10 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   box-sizing: border-box;
   margin: 0;
 }
@@ -39,4 +43,30 @@ img:nth-child(2) {
 
 img:nth-child(5) {
   display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img:nth-child(1) {
+    display: block;
+  }
+
+  img:nth-child(2) {
+    display: inline-block;
+    width: 50%;
+  }
+
+  img:nth-child(3) {
+    display: inline-block;
+    width: 50%;
+  }
+
+  img:nth-child(4) {
+    display: inline-block;
+    width: 50%;
+  }
+
+  img:nth-child(5) {
+    display: inline-block;width: 50%;
+  }
 }
