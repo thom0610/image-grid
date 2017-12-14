@@ -23,23 +23,18 @@ body {
 
 section {
   margin: 0;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 img {
   width: 100%;
-  float:left;
+  float: left;
+  display: block;
 }
-img:nth-child(1) {
-  overflow: hidden;
-  max-height: 25em;
-}
-
 
 img:nth-child(2) {
   display: none;
 }
-
 
 img:nth-child(5) {
   display: none;
@@ -67,7 +62,8 @@ img:nth-child(5) {
   }
 
   img:nth-child(5) {
-    display: inline-block;width: 50%;
+    display: inline-block;
+    width: 50%;
   }
 }
 
@@ -80,19 +76,54 @@ img:nth-child(5) {
   img:nth-child(2) {
     display: inline-block;
     width: 33.3333%;
+    float: left;
   }
 
   img:nth-child(3) {
     display: inline-block;
     width: 33.3333%;
+    float: left;
   }
 
   img:nth-child(4) {
     display: inline-block;
     width: 33.33%;
+    float: left;
   }
 
   img:nth-child(5) {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  img:nth-child(1) {
+    display: inline-block;
+    float: left;
+    width: 66.6666%;
+  }
+
+  img:nth-child(2) {
+    display: inline-block;
+    width: 33.3333%;
+    float: left;
+  }
+
+  img:nth-child(3) {
+    display: inline-block;
+    width: 33.3333%;
+    float: left;
+  }
+
+  img:nth-child(4) {
+    display: inline-block;
+    width: 33.3333%;
+    float: left;
+  }
+
+  img:nth-child(5) {
+    display: inline-block;
+    width: 33.3333%;
   }
 }
